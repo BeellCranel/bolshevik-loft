@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display Regular"), local("Playfair-Display-Regular"),
+    url("PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("PlayfairDisplay-Regular.woff") format("woff"),
+    url("PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display SemiBold"), local("Playfair-Display-SemiBold"),
+    url("PlayfairDisplay-SemiBold.woff2") format("woff2"),
+    url("PlayfairDisplay-SemiBold.woff") format("woff"),
+    url("PlayfairDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: "Yeseva One";
+    src: local("Yeseva One Regular"), local("Yeseva-One-Regular"),
+      url("YesevaOne-Regular.woff2") format("woff2"),
+      url("YesevaOne-Regular.woff") format("woff"),
+      url("YesevaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
