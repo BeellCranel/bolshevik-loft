@@ -15,9 +15,8 @@
   text-rendering: optimizeLegibility;
   width: 100%;
   min-width: 320px;
-  min-height: 100vh;
   color: #fff;
-  font-size: calc(13px + 3 * ((100vw - 375px) / (1280 - 375)));
+  font-size: calc(13px + 3 * ((100vw - 320px) / (1280 - 320)));
   line-height: 1.4;
   font-weight: 300;
 }
