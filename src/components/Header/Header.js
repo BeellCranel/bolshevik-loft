@@ -3,12 +3,14 @@ import "./Header.css";
 import Logo from "../../UI/Logo/Logo";
 import Burger from "../../UI/Burger/Burger";
 import ModalMenu from "../ModalMenu/ModalMenu";
+import Contacts from "../../UI/Contacts/Contacts";
 
 const Header = ({ modalIsOpen, modalToggleHandler }) => {
   return (
     <header className="header">
       <Logo />
-      <div className="header__nav-menu">
+      <Contacts />
+      <div>
         <Burger
           modalIsOpen={modalIsOpen}
           modalToggleHandler={modalToggleHandler}

@@ -1,0 +1,16 @@
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+
+.contacts__link {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  color: #fff;
+}
+
+.contacts__link_type_email {
+    text-decoration: none;
+}
