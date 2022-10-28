@@ -1,7 +1,14 @@
 import React from "react";
 import "./Burger.css";
 
-const Burger = ({ modalIsOpen, modalToggleHandler }) => {
+const Burger = ({ modalIsOpen, modalOpenHandler, modalCloseHandler }) => {
+  const modalToggleHandler = () => {
+    if (modalIsOpen) {
+      modalCloseHandler();
+    } else {
+      modalOpenHandler();
+    }
+  };
   const itemOne = `burger__item burger__item_type_one${
     modalIsOpen ? " burger__item_type_one-open" : ""
   }`;

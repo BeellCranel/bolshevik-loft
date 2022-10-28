@@ -5,7 +5,7 @@ import Burger from "../../UI/Burger/Burger";
 import ModalMenu from "../ModalMenu/ModalMenu";
 import Contacts from "../../UI/Contacts/Contacts";
 
-const Header = ({ modalIsOpen, modalToggleHandler }) => {
+const Header = ({ modalIsOpen, modalOpenHandler, modalCloseHandler }) => {
   return (
     <header className="header">
       <Logo />
@@ -13,9 +13,13 @@ const Header = ({ modalIsOpen, modalToggleHandler }) => {
       <div>
         <Burger
           modalIsOpen={modalIsOpen}
-          modalToggleHandler={modalToggleHandler}
+          modalOpenHandler={modalOpenHandler}
+          modalCloseHandler={modalCloseHandler}
         />
-        <ModalMenu modalIsOpen={modalIsOpen} />
+        <ModalMenu
+          modalIsOpen={modalIsOpen}
+          modalCloseHandler={modalCloseHandler}
+        />
       </div>
     </header>
   );

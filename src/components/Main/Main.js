@@ -4,9 +4,9 @@ import "./Main.css";
 import telegramIcon from "../../vendor/images/messengers/telegram.svg";
 import whatsappIcon from "../../vendor/images/messengers/whatsapp.svg";
 
-const Main = () => {
+const Main = ({ modalIsOpen }) => {
   return (
-    <main className="main">
+    <main>
       <header className="main-header">
         <div className="main-header__background"></div>
         <section className="main-header__about">
@@ -49,6 +49,7 @@ const Main = () => {
           </div>
 
           <div className="main-header__subtitle-wrapper">
+            <span className="main-header__icon" />
             <p
               className="main-header__subtitle main-header__subtitle-one text-style"
               lang="ru"

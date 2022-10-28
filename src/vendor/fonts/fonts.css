@@ -21,12 +21,23 @@
 }
 
 @font-face {
-    font-family: "Yeseva One";
-    src: local("Yeseva One Regular"), local("Yeseva-One-Regular"),
-      url("YesevaOne-Regular.woff2") format("woff2"),
-      url("YesevaOne-Regular.woff") format("woff"),
-      url("YesevaOne-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
+  font-family: "Yeseva One";
+  src: local("Yeseva One Regular"), local("Yeseva-One-Regular"),
+    url("YesevaOne-Regular.woff2") format("woff2"),
+    url("YesevaOne-Regular.woff") format("woff"),
+    url("YesevaOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: local("Cormorant Garamond Regular"), local("Cormorant-Garamond-Regular"),
+    url("CormorantGaramond-Regular.woff2") format("woff2"),
+    url("CormorantGaramond-Regular.woff") format("woff"),
+    url("CormorantGaramond-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

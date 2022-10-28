@@ -9,13 +9,18 @@
   z-index: 1000;
   padding: 15px 15px;
   padding-bottom: 30px;
-  background-color: rgb(50, 50, 50);
-  animation: filled 1s ease forwards;
+  background-color: #000;
+  animation: filled 1s ease forwards 0.5s;
+}
+
+@media screen and (min-width: 624px) {
+  .header {
+    padding: 15px 30px;
+  }
 }
 
 @keyframes filled {
   to {
-    background-color: #000;
     padding-bottom: 15px;
   }
 }

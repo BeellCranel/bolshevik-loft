@@ -1,7 +1,7 @@
 import React from "react";
 import "./ModalMenu.css";
 
-const ModalMenu = ({ modalIsOpen }) => {
+const ModalMenu = ({ modalIsOpen, modalCloseHandler }) => {
   const modalMenuClassName = `modal-menu${
     modalIsOpen ? " modal-menu-opened" : ""
   }`;
@@ -10,9 +10,13 @@ const ModalMenu = ({ modalIsOpen }) => {
   }`;
 
   return (
-    <div className={modalMenuClassName}>
-      <nav className={modalMenuContentClassName}>
+    <div className={modalMenuClassName} onClick={modalCloseHandler}>
+      <nav
+        className={modalMenuContentClassName}
+        onClick={(e) => e.stopPropagation()}
+      >
         <ul className="modal-menu__wrapper">
+          <span className="modal-menu__icon" />
           <li className="modal-menu__item">
             <p className="modal-menu__text">главная</p>
           </li>
