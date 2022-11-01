@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
+import Footer from "../Footer/Footer";
 
 const App = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -28,6 +29,7 @@ const App = () => {
         modalCloseHandler={modalCloseHandler}
       />
       <Main modalIsOpen={modalIsOpen} />
+      <Footer />
     </div>
   );
 };

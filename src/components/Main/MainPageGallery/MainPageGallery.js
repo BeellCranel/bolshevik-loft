@@ -14,12 +14,19 @@ const MainPageGallery = () => {
   const settings = {
     className: "center",
     centerMode: true,
-    centerPadding: "60px",
     dots: true,
     arrows: false,
     infinite: true,
     speed: 1000,
     variableWidth: true,
+    responsive: [
+        {
+          breakpoint: 424,
+          settings: {
+            centerMode: false,
+          },
+        },
+      ],
   };
 
   return (

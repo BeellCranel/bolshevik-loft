@@ -31,6 +31,13 @@ const MainPageAffiche = () => {
           slidesToShow: 1,
         },
       },
+      {
+        breakpoint: 424,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
     ],
   };
   return (
