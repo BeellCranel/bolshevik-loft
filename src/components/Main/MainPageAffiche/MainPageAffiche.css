@@ -70,12 +70,6 @@
   gap: 2rem;
 }
 
-@keyframes slipLeft {
-  to {
-    transform: translate(0, 0);
-  }
-}
-
 @media screen and (min-width: 624px) {
   .main-affiche__hot-slider {
     padding: 2rem 10% 0;

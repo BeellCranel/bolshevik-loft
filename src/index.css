@@ -1,2 +1,9 @@
 @import url("./vendor/normalize.css");
 @import url("./vendor/fonts/fonts.css");
+
+
+@keyframes slipLeft {
+    to {
+      transform: translate(0, 0);
+    }
+  }
