@@ -1,0 +1,55 @@
+.card {
+  width: 100%;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 14%);
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.card-hot {
+  width: 100%;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 14%);
+  transition: transform 0.5s ease;
+}
+
+.card-hot:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.card__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__content {
+  padding: 0.6rem 2rem;
+}
+
+.card__title {
+  font-size: calc(16px + 6 * ((100vw - 320px) / (1280 - 320)));
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.card__details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: calc((100% / 2) - (2rem / 2));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card {
+    width: calc((100% / 3) - (4rem / 3));
+  }
+}

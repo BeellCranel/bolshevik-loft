@@ -1,0 +1,21 @@
+.button {
+  text-transform: uppercase;
+  display: block;
+  width: 8rem;
+  height: 2rem;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  background-color: #000;
+  color: #fff;
+  margin: 0 auto;
+  font-family: "Yeseva One";
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
