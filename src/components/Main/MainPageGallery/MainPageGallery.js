@@ -12,18 +12,16 @@ import itemSix from "../../../vendor/images/gallery/gallery6.jpg";
 
 const MainPageGallery = () => {
   const settings = {
-    className: "center",
-    centerMode: true,
     dots: true,
-    arrows: false,
+    arrows: true,
     infinite: true,
-    speed: 1000,
+    speed: 300,
     variableWidth: true,
     responsive: [
         {
           breakpoint: 424,
           settings: {
-            centerMode: false,
+            arrows: false,
           },
         },
       ],

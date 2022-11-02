@@ -21,11 +21,17 @@
 
 .main-gallery__slider-wrapper {
   width: 100%;
-  padding: 2rem 0;
+  max-width: 1807px;
+  margin: 0 auto;
+  padding: 2rem 10%;
 }
 
 .slick-slide > div {
   margin: 1rem 1rem;
+}
+
+.slick-next {
+  right: -40px;
 }
 
 .main-gallery__gallery-item {
