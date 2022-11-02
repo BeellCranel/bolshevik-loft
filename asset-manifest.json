@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bolshevik-loft/static/css/main.2f3d1795.css",
-    "main.js": "/bolshevik-loft/static/js/main.6d538f86.js",
+    "main.css": "/bolshevik-loft/static/css/main.f0b5b965.css",
+    "main.js": "/bolshevik-loft/static/js/main.0d186b9d.js",
     "static/media/CormorantGaramond-Regular.ttf": "/bolshevik-loft/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
     "static/media/CormorantGaramond-Regular.woff": "/bolshevik-loft/static/media/CormorantGaramond-Regular.20b6cf31019603797829.woff",
     "static/media/PlayfairDisplay-SemiBold.ttf": "/bolshevik-loft/static/media/PlayfairDisplay-SemiBold.baf57ba0df5544f5125e.ttf",
@@ -30,11 +30,11 @@
     "static/media/whatsapp.svg": "/bolshevik-loft/static/media/whatsapp.afd36da0d5fab47d89b0c2f3b4bfdd7c.svg",
     "static/media/slick.woff": "/bolshevik-loft/static/media/slick.295183786cd8a1389865.woff",
     "static/media/telegram.svg": "/bolshevik-loft/static/media/telegram.bb43dc9c83e31a10e6fa3801ed8018e6.svg",
-    "main.2f3d1795.css.map": "/bolshevik-loft/static/css/main.2f3d1795.css.map",
-    "main.6d538f86.js.map": "/bolshevik-loft/static/js/main.6d538f86.js.map"
+    "main.f0b5b965.css.map": "/bolshevik-loft/static/css/main.f0b5b965.css.map",
+    "main.0d186b9d.js.map": "/bolshevik-loft/static/js/main.0d186b9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f3d1795.css",
-    "static/js/main.6d538f86.js"
+    "static/css/main.f0b5b965.css",
+    "static/js/main.0d186b9d.js"
   ]
 }
