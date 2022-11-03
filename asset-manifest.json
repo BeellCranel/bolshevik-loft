@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/bolshevik-loft/static/css/main.f0b5b965.css",
-    "main.js": "/bolshevik-loft/static/js/main.0d186b9d.js",
+    "main.css": "/bolshevik-loft/static/css/main.54b8d2e1.css",
+    "main.js": "/bolshevik-loft/static/js/main.c9682177.js",
     "static/media/CormorantGaramond-Regular.ttf": "/bolshevik-loft/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
+    "static/media/-TT----_250.jpg": "/bolshevik-loft/static/media/-TT----_250.5afb619a8c9fb48eab5a.jpg",
     "static/media/CormorantGaramond-Regular.woff": "/bolshevik-loft/static/media/CormorantGaramond-Regular.20b6cf31019603797829.woff",
     "static/media/PlayfairDisplay-SemiBold.ttf": "/bolshevik-loft/static/media/PlayfairDisplay-SemiBold.baf57ba0df5544f5125e.ttf",
     "static/media/PlayfairDisplay-Regular.ttf": "/bolshevik-loft/static/media/PlayfairDisplay-Regular.27705d9c43e8c36b1abd.ttf",
@@ -11,6 +12,7 @@
     "static/media/YesevaOne-Regular.ttf": "/bolshevik-loft/static/media/YesevaOne-Regular.77e7411de8c57683e277.ttf",
     "static/media/PlayfairDisplay-SemiBold.woff": "/bolshevik-loft/static/media/PlayfairDisplay-SemiBold.2448d0511571ebf9b246.woff",
     "static/media/PlayfairDisplay-Regular.woff": "/bolshevik-loft/static/media/PlayfairDisplay-Regular.f47293fb9eede22f0b8d.woff",
+    "static/media/-TT----_248.jpg": "/bolshevik-loft/static/media/-TT----_248.68f4f7d2cfdcd60dbe08.jpg",
     "static/media/PlayfairDisplay-SemiBold.woff2": "/bolshevik-loft/static/media/PlayfairDisplay-SemiBold.d66b3b4c8d61cc0d41a5.woff2",
     "static/media/PlayfairDisplay-Regular.woff2": "/bolshevik-loft/static/media/PlayfairDisplay-Regular.07ad5beb7854f1f7f077.woff2",
     "static/media/YesevaOne-Regular.woff": "/bolshevik-loft/static/media/YesevaOne-Regular.ae888ab79f3e2e9f21e5.woff",
@@ -30,11 +32,12 @@
     "static/media/whatsapp.svg": "/bolshevik-loft/static/media/whatsapp.afd36da0d5fab47d89b0c2f3b4bfdd7c.svg",
     "static/media/slick.woff": "/bolshevik-loft/static/media/slick.295183786cd8a1389865.woff",
     "static/media/telegram.svg": "/bolshevik-loft/static/media/telegram.bb43dc9c83e31a10e6fa3801ed8018e6.svg",
-    "main.f0b5b965.css.map": "/bolshevik-loft/static/css/main.f0b5b965.css.map",
-    "main.0d186b9d.js.map": "/bolshevik-loft/static/js/main.0d186b9d.js.map"
+    "static/media/close-btn.svg": "/bolshevik-loft/static/media/close-btn.ecd8fd4af2eef40c8018.svg",
+    "main.54b8d2e1.css.map": "/bolshevik-loft/static/css/main.54b8d2e1.css.map",
+    "main.c9682177.js.map": "/bolshevik-loft/static/js/main.c9682177.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0b5b965.css",
-    "static/js/main.0d186b9d.js"
+    "static/css/main.54b8d2e1.css",
+    "static/js/main.c9682177.js"
   ]
 }
