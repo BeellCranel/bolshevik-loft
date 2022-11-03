@@ -10,21 +10,23 @@ import itemFour from "../../../vendor/images/gallery/gallery4.jpg";
 import itemFive from "../../../vendor/images/gallery/gallery5.jpg";
 import itemSix from "../../../vendor/images/gallery/gallery6.jpg";
 
-const MainPageGallery = () => {
+const MainPageGallery = ({ imagePopupOpenHandler }) => {
   const settings = {
     dots: true,
     arrows: true,
     infinite: true,
     speed: 300,
     variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [
-        {
-          breakpoint: 424,
-          settings: {
-            arrows: false,
-          },
+      {
+        breakpoint: 424,
+        settings: {
+          arrows: false,
         },
-      ],
+      },
+    ],
   };
 
   return (
@@ -34,7 +36,10 @@ const MainPageGallery = () => {
       </div>
       <div className="main-gallery__slider-wrapper">
         <Slider {...settings}>
-          <div className="main-gallery__gallery-item">
+          <div
+            className="main-gallery__gallery-item"
+            onClick={imagePopupOpenHandler}
+          >
             <div className="main-gallery__gallery-item-title-wrapper">
               <h3 className="main-gallery__gallery-item-title">
                 Новогодние корпоративы
@@ -46,7 +51,10 @@ const MainPageGallery = () => {
               alt="Новогодние корпоративы"
             />
           </div>
-          <div className="main-gallery__gallery-item">
+          <div
+            className="main-gallery__gallery-item"
+            onClick={imagePopupOpenHandler}
+          >
             <div className="main-gallery__gallery-item-title-wrapper">
               <h3 className="main-gallery__gallery-item-title">Свадьбы</h3>
             </div>
@@ -56,7 +64,10 @@ const MainPageGallery = () => {
               alt="Свадьбы"
             />
           </div>
-          <div className="main-gallery__gallery-item">
+          <div
+            className="main-gallery__gallery-item"
+            onClick={imagePopupOpenHandler}
+          >
             <div className="main-gallery__gallery-item-title-wrapper">
               <h3 className="main-gallery__gallery-item-title">
                 Детские праздники
@@ -68,7 +79,10 @@ const MainPageGallery = () => {
               alt="Детские праздники"
             />
           </div>
-          <div className="main-gallery__gallery-item">
+          <div
+            className="main-gallery__gallery-item"
+            onClick={imagePopupOpenHandler}
+          >
             <div className="main-gallery__gallery-item-title-wrapper">
               <h3 className="main-gallery__gallery-item-title">Презентации</h3>
             </div>
@@ -78,7 +92,10 @@ const MainPageGallery = () => {
               alt="Презентации"
             />
           </div>
-          <div className="main-gallery__gallery-item">
+          <div
+            className="main-gallery__gallery-item"
+            onClick={imagePopupOpenHandler}
+          >
             <div className="main-gallery__gallery-item-title-wrapper">
               <h3 className="main-gallery__gallery-item-title">Концерты</h3>
             </div>
@@ -88,7 +105,10 @@ const MainPageGallery = () => {
               alt="Концерты"
             />
           </div>
-          <div className="main-gallery__gallery-item">
+          <div
+            className="main-gallery__gallery-item"
+            onClick={imagePopupOpenHandler}
+          >
             <div className="main-gallery__gallery-item-title-wrapper">
               <h3 className="main-gallery__gallery-item-title">StandUp</h3>
             </div>

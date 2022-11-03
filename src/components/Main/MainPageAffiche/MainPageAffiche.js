@@ -17,7 +17,7 @@ const MainPageAffiche = () => {
     speed: 1000,
     slidesToShow: 3,
     autoplay: true,
-    autoplaySpeed: 7000,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1279,
@@ -49,18 +49,18 @@ const MainPageAffiche = () => {
         <h3 className="main-affiche__hot-title">Рекомендуем</h3>
         <div className="main-affiche__slider-wrapper">
           <Slider {...settings}>
-            <EventCard hot={true} />
-            <EventCard hot={true} />
-            <EventCard hot={true} />
+            <EventCard hot={true} address="https://getafisha.ru/standup/672" />
+            <EventCard hot={true} address="https://getafisha.ru/standup/672" />
+            <EventCard hot={true} address="https://getafisha.ru/standup/672" />
           </Slider>
         </div>
       </section>
       <section className="main-affiche__all-events">
         <h3 className="main-affiche__hot-title">В близжайшие дни</h3>
         <div className="main-affiche__cards-wrapper">
-          <EventCard />
-          <EventCard />
-          <EventCard />
+          <EventCard address="https://getafisha.ru/standup/672" />
+          <EventCard address="https://getafisha.ru/standup/672" />
+          <EventCard address="https://getafisha.ru/standup/672" />
         </div>
       </section>
       <Button name="Еще" />

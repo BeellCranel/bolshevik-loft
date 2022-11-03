@@ -5,12 +5,12 @@ import MainPageAffiche from "./MainPageAffiche/MainPageAffiche";
 import MainPageGallery from "./MainPageGallery/MainPageGallery";
 import MainPageHeader from "./MainPageHeader/MainPageHeader";
 
-const Main = () => {
+const Main = ({ imagePopupOpenHandler }) => {
   return (
     <main>
       <MainPageHeader />
       <MainPageAffiche />
-      <MainPageGallery />
+      <MainPageGallery imagePopupOpenHandler={imagePopupOpenHandler} />
     </main>
   );
 };
