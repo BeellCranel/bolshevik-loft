@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bolshevik-loft/static/css/main.54b8d2e1.css",
-    "main.js": "/bolshevik-loft/static/js/main.c9682177.js",
+    "main.css": "/bolshevik-loft/static/css/main.77ff125a.css",
+    "main.js": "/bolshevik-loft/static/js/main.fd2a083d.js",
     "static/media/CormorantGaramond-Regular.ttf": "/bolshevik-loft/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
     "static/media/-TT----_250.jpg": "/bolshevik-loft/static/media/-TT----_250.5afb619a8c9fb48eab5a.jpg",
     "static/media/CormorantGaramond-Regular.woff": "/bolshevik-loft/static/media/CormorantGaramond-Regular.20b6cf31019603797829.woff",
@@ -27,17 +27,17 @@
     "static/media/slick.svg": "/bolshevik-loft/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/bolshevik-loft/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/bolshevik-loft/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/border__white.svg": "/bolshevik-loft/static/media/border__white.a592bea644e87fb282a7.svg",
     "index.html": "/bolshevik-loft/index.html",
+    "static/media/border__white.svg": "/bolshevik-loft/static/media/border__white.a592bea644e87fb282a7.svg",
     "static/media/whatsapp.svg": "/bolshevik-loft/static/media/whatsapp.afd36da0d5fab47d89b0c2f3b4bfdd7c.svg",
     "static/media/slick.woff": "/bolshevik-loft/static/media/slick.295183786cd8a1389865.woff",
     "static/media/telegram.svg": "/bolshevik-loft/static/media/telegram.bb43dc9c83e31a10e6fa3801ed8018e6.svg",
     "static/media/close-btn.svg": "/bolshevik-loft/static/media/close-btn.ecd8fd4af2eef40c8018.svg",
-    "main.54b8d2e1.css.map": "/bolshevik-loft/static/css/main.54b8d2e1.css.map",
-    "main.c9682177.js.map": "/bolshevik-loft/static/js/main.c9682177.js.map"
+    "main.77ff125a.css.map": "/bolshevik-loft/static/css/main.77ff125a.css.map",
+    "main.fd2a083d.js.map": "/bolshevik-loft/static/js/main.fd2a083d.js.map"
   },
   "entrypoints": [
-    "static/css/main.54b8d2e1.css",
-    "static/js/main.c9682177.js"
+    "static/css/main.77ff125a.css",
+    "static/js/main.fd2a083d.js"
   ]
 }
