@@ -47,6 +47,10 @@
   gap: 0.1rem;
 }
 
+.card__date {
+  font-family: "Yeseva One";
+}
+
 @media screen and (min-width: 768px) {
   .card {
     width: calc((100% / 2) - (2rem / 2));

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "../Header/Header";
 import Main from "../Main/Main";
-import Footer from "../Footer/Footer";
 import ImagePopup from "../ImagePopup/ImagePopup";
+import Affiche from "../Affiche/Affiche";
+import Layout from "../Layout/Layout";
 
 const App = () => {
   const [navPopupOpen, setNavPopupOpen] = useState(false);
@@ -34,13 +35,24 @@ const App = () => {
 
   return (
     <div className="app">
-      <Header
-        modalIsOpen={navPopupOpen}
-        modalOpenHandler={navPopupOpenHandler}
-        modalCloseHandler={allModalCloseHandler}
-      />
-      <Main imagePopupOpenHandler={imagePopupOpenHandler} />
-      <Footer />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout
+              modalIsOpen={navPopupOpen}
+              modalOpenHandler={navPopupOpenHandler}
+              modalCloseHandler={allModalCloseHandler}
+            />
+          }
+        >
+          <Route
+            index
+            element={<Main imagePopupOpenHandler={imagePopupOpenHandler} />}
+          />
+          <Route path="affiche" element={<Affiche />} />
+        </Route>
+      </Routes>
       <ImagePopup
         isOpen={imagePopupOpen}
         onOpen={imagePopupOpenHandler}

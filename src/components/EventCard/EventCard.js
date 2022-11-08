@@ -2,7 +2,7 @@ import React from "react";
 import "./EventCard.css";
 
 const EventCard = ({ hot, address }) => {
-  const cardClassName = hot ? "card-hot" : "card";
+  const cardClassName = hot ? "card-hot" :  "card";
 
   return (
     <article className={cardClassName}>
@@ -20,16 +20,16 @@ const EventCard = ({ hot, address }) => {
           </h4>
           <ul className="card__details">
             <li className="card__detail">
-              <p className="card__date">Дата мероприятия: 05.11.2022</p>
+              <p>Дата мероприятия: <b className="card__date">05.11.2022</b></p>
             </li>
             <li className="card__detail">
-              <p className="crad__meeting">Сбор гостей: 20:30</p>
+              <p>Сбор гостей: 20:30</p>
             </li>
             <li className="card__detail">
-              <p className="card__start-time">Начало: 21:00</p>
+              <p>Начало: 21:00</p>
             </li>
             <li className="card__detail">
-              <p className="card__kitchen">
+              <p>
                 Во время мероприятия работает кухня и бар.
               </p>
             </li>

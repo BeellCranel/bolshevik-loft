@@ -1,0 +1,9 @@
+.affiche {
+  padding: calc(93px + 2rem) 10% 2rem;
+}
+
+.affiche__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}

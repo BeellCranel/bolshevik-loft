@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./ModalMenu.css";
 
 const ModalMenu = ({ modalIsOpen, modalCloseHandler }) => {
@@ -18,10 +19,28 @@ const ModalMenu = ({ modalIsOpen, modalCloseHandler }) => {
         <ul className="modal-menu__wrapper">
           <span className="modal-menu__icon" />
           <li className="modal-menu__item">
-            <p className="modal-menu__text">главная</p>
+            <NavLink
+              className="modal-menu__nav-link"
+              to="/"
+              style={({ isActive }) => ({
+                color: isActive ? "#9f9e9c" : "white",
+              })}
+              onClick={modalCloseHandler}
+            >
+              главная
+            </NavLink>
           </li>
           <li className="modal-menu__item">
-            <p className="modal-menu__text">афиша</p>
+            <NavLink
+              className="modal-menu__nav-link"
+              to="/affiche"
+              style={({ isActive }) => ({
+                color: isActive ? "#9f9e9c" : "white",
+              })}
+              onClick={modalCloseHandler}
+            >
+              афиша
+            </NavLink>
           </li>
           <li className="modal-menu__item">
             <p className="modal-menu__text">организация мероприятий</p>
