@@ -38,6 +38,7 @@
   left: 10%;
   font-size: calc(38px + 32 * ((100vw - 320px) / (1280 - 320)));
   transform: translate(-150%, 0);
+  opacity: 0;
   animation: slipLeft 1s ease forwards 0.5s;
 }
 

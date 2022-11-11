@@ -30,7 +30,7 @@
 .image-popup__close-btn {
   width: 25px;
   height: 25px;
-  background-image: url("../../vendor/images/imagePopup/close-btn.svg");
+  background-image: url("../../vendor/images/icons/close-btn.svg");
   background-size: cover;
   background-position: center;
   position: absolute;

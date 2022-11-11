@@ -43,7 +43,16 @@ const ModalMenu = ({ modalIsOpen, modalCloseHandler }) => {
             </NavLink>
           </li>
           <li className="modal-menu__item">
-            <p className="modal-menu__text">организация мероприятий</p>
+            <NavLink
+              className="modal-menu__nav-link"
+              to="/terms"
+              style={({ isActive }) => ({
+                color: isActive ? "#9f9e9c" : "white",
+              })}
+              onClick={modalCloseHandler}
+            >
+              организация мероприятий
+            </NavLink>
           </li>
           <li className="modal-menu__item">
             <p className="modal-menu__text">характеристика пространства</p>
