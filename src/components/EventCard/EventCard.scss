@@ -1,0 +1,66 @@
+@import "../../ui-kit/styles";
+
+.card {
+  width: 100%;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 14%);
+  transition: transform 0.5s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+  }
+
+  &__link {
+    color: $white-theme-font-color;
+    text-decoration: none;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 0.6rem 2rem;
+  }
+
+  &__title {
+    font-size: $med-adaptive-font-size;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+  }
+
+  &__details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  &__date {
+    font-family: $yeseva-font-family;
+  }
+}
+
+.card-hot {
+  width: 100%;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 14%);
+  transition: transform 0.5s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: calc((100% / 2) - (2rem / 2));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card {
+    width: calc((100% / 3) - (4rem / 3));
+  }
+}

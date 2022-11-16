@@ -1,0 +1,1 @@
+export { MainPageAffiche as default } from "./MainPageAffiche"

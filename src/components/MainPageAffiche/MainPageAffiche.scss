@@ -1,0 +1,75 @@
+@import "../../ui-kit/styles";
+
+.main-affiche {
+  padding: 5rem 0 3rem;
+  width: 100%;
+  color: $white-theme-font-color;
+
+  &__title-wrapper {
+    padding-top: calc($big-adaptive-font-size * 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+
+  &__title {
+    font-family: $title-font-family;
+    color: $white-theme-font-color;
+    position: absolute;
+    top: calc($big-adaptive-font-size * -0.9);
+    left: 10%;
+    font-size: $big-adaptive-font-size;
+    transform: translate(-150%, 0);
+    opacity: 0;
+    animation: slipLeft 1s ease forwards 0.5s;
+  }
+
+  &__hot {
+    padding-top: 3rem;
+  }
+
+  &__hot-title {
+    padding: 0 10%;
+    display: flex;
+    font-family: $yeseva-font-family;
+    font-size: $med-adaptive-font-size;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+
+    &::after,
+    &::before {
+      border-bottom: 1px solid;
+      content: "";
+      flex: 1 1;
+      margin: auto;
+      min-width: 10%;
+    }
+
+    &::after {
+      margin-left: 1rem;
+    }
+
+    &::before {
+      margin-right: 1rem;
+    }
+  }
+
+  &__slider-wrapper {
+    padding: 2rem 0;
+  }
+
+  &__all-events {
+    padding: 3rem 0;
+  }
+
+  &__cards-wrapper {
+    padding: 2rem 10% 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+.slick-slide > div {
+  margin: 1rem 1rem;
+}

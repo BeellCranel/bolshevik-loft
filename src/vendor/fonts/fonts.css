@@ -1,4 +1,39 @@
 @font-face {
+  font-family: "Cormorant Garamond";
+  src: local("Cormorant Garamond Regular"), local("Cormorant-Garamond-Regular"),
+    url("CormorantGaramond-Regular.woff2") format("woff2"),
+    url("CormorantGaramond-Regular.woff") format("woff"),
+    url("CormorantGaramond-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: local("Montserrat Alternates Regular"),
+    local("Montserrat-Alternates-Regular"),
+    url("MontserratAlternates-Regular.woff2") format("woff2"),
+    url("MontserratAlternates-Regular.woff") format("woff"),
+    url("MontserratAlternates-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: local("Montserrat Alternates SemiBold"),
+    local("Montserrat-Alternates-SemiBold"),
+    url("MontserratAlternates-SemiBold.woff2") format("woff2"),
+    url("MontserratAlternates-SemiBold.woff") format("woff"),
+    url("MontserratAlternates-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Playfair Display";
   src: local("Playfair Display Regular"), local("Playfair-Display-Regular"),
     url("PlayfairDisplay-Regular.woff2") format("woff2"),
@@ -26,17 +61,6 @@
     url("YesevaOne-Regular.woff2") format("woff2"),
     url("YesevaOne-Regular.woff") format("woff"),
     url("YesevaOne-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Cormorant Garamond";
-  src: local("Cormorant Garamond Regular"), local("Cormorant-Garamond-Regular"),
-    url("CormorantGaramond-Regular.woff2") format("woff2"),
-    url("CormorantGaramond-Regular.woff") format("woff"),
-    url("CormorantGaramond-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;

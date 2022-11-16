@@ -1,0 +1,1 @@
+export { OfferForm as default } from "./OfferForm"

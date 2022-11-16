@@ -1,0 +1,1 @@
+export { OfferPopup as default } from "./OfferPopup"

@@ -1,0 +1,71 @@
+@import "../../ui-kit/styles/";
+
+.main-gallery {
+  width: 100%;
+  background-color: $light-gray-background-color;
+  padding: 5rem 0 3rem;
+
+  &__title-wrapper {
+    padding-top: calc($big-adaptive-font-size * 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+
+  &__title {
+    font-family: $title-font-family;
+    color: $white-theme-font-color;
+    position: absolute;
+    top: calc($big-adaptive-font-size * -0.9);
+    left: 10%;
+    font-size: $big-adaptive-font-size;
+    transform: translate(-150%, 0);
+    opacity: 0;
+    animation: slipLeft 1s ease forwards 0.5s;
+  }
+
+  &__slider-wrapper {
+    width: 100%;
+    max-width: 1807px;
+    margin: 0 auto;
+    padding: 2rem 10%;
+  }
+
+  &__gallery-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+      transition: transform 0.5s ease;
+      transform: scale(1.01);
+    }
+  }
+
+  &__gallery-item-title-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__gallery-item-title {
+    letter-spacing: -0.1em;
+    font-size: 24px;
+  }
+
+  &__gallery-img {
+    width: 208px;
+    height: 393px;
+    object-fit: cover;
+  }
+}
+
+.slick-slide > div {
+  margin: 1rem 1rem;
+}

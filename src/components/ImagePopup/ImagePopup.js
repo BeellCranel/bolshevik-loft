@@ -1,12 +1,12 @@
 import React from "react";
-import "./ImagePopup.css";
+import "./ImagePopup.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import imgOne from "../../vendor/images/weddings/-TT----_248.jpg";
 import imgTwo from "../../vendor/images/weddings/-TT----_250.jpg";
 
-const ImagePopup = ({ isOpen, onClose }) => {
+export const ImagePopup = ({ isOpen, onClose }) => {
   const popupClassName = `image-popup${isOpen ? " image-popup__opened" : ""}`;
   const settings = {
     dots: false,
@@ -54,5 +54,3 @@ const ImagePopup = ({ isOpen, onClose }) => {
     </div>
   );
 };
-
-export default ImagePopup;

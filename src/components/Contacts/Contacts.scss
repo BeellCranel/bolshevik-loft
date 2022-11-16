@@ -1,0 +1,17 @@
+@import "../../ui-kit/styles";
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+
+.contacts__link {
+  font-family: $yeseva-font-family;
+  color: $dark-theme-font-color;
+}
+
+.contacts__link_type_email {
+  text-decoration: none;
+}

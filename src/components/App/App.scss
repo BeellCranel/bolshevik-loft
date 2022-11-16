@@ -1,0 +1,24 @@
+@import "../../ui-kit/styles";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: $white-background-color;
+  font-family: $base-font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  min-width: 320px;
+  color: $dark-theme-font-color;
+  font-size: $base-adaptive-font-size;
+  line-height: 1.25;
+  font-style: normal;
+}

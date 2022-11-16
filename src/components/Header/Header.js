@@ -1,11 +1,14 @@
 import React from "react";
-import "./Header.css";
-import Logo from "../../UI/Logo/Logo";
-import Burger from "../../UI/Burger/Burger";
-import ModalMenu from "../ModalMenu/ModalMenu";
-import Contacts from "../../UI/Contacts/Contacts";
+import "./Header.scss";
+import { Logo, Burger } from "../../ui-kit";
+import { Contacts, NavPopup } from "../";
 
-const Header = ({ modalIsOpen, modalOpenHandler, modalCloseHandler }) => {
+export const Header = ({
+  modalIsOpen,
+  modalOpenHandler,
+  modalCloseHandler,
+  closeNavPopup,
+}) => {
   return (
     <header className="header">
       <Logo />
@@ -16,13 +19,12 @@ const Header = ({ modalIsOpen, modalOpenHandler, modalCloseHandler }) => {
           modalOpenHandler={modalOpenHandler}
           modalCloseHandler={modalCloseHandler}
         />
-        <ModalMenu
+        <NavPopup
           modalIsOpen={modalIsOpen}
           modalCloseHandler={modalCloseHandler}
+          closeNavPopup={closeNavPopup}
         />
       </div>
     </header>
   );
 };
-
-export default Header;

@@ -1,23 +1,20 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import Main from "../Main/Main";
-import ImagePopup from "../ImagePopup/ImagePopup";
-import Affiche from "../Affiche/Affiche";
-import Layout from "../Layout/Layout";
-import Terms from "../Terms/Terms";
-import OfferPopup from "../OfferPopup/OfferPopup";
+import "./App.scss";
+import { AffichePage, MainPage, TermsPage } from "../../pages";
+import { ImagePopup, Layout, OfferPopup } from "../";
 
-const App = () => {
+export const App = () => {
+  // состояния модальных окон
   const [navPopupOpen, setNavPopupOpen] = useState(false);
   const [imagePopupOpen, setImagePopupOpen] = useState(false);
   const [offerPopupOpen, setOfferPopupOpen] = useState(false);
   const [scrollY, setScrollY] = useState();
+    
 
+  // обработчики модальных окон
   const bodyFixHandler = () => {
-    // document.body.style.top = `-${window.scrollY}px`;
-    // document.body.style.position = "fixed";
-    setScrollY(`-${window.scrollY}px`)
+    setScrollY(`-${window.scrollY}px`);
     document.body.style.height = "100vh";
     document.body.style.minHeight = "100vh";
     document.body.style.overflow = "hidden";
@@ -34,11 +31,7 @@ const App = () => {
     bodyFixHandler();
     setOfferPopupOpen(true);
   };
-  const allModalCloseHandler = () => {
-    // const scrollY = document.body.style.top;
-    // document.body.style.position = "";
-    // document.body.style.top = "";
-    // document.body.style.width = "";
+  const bodyFixClosePopup = () => {
     document.body.style.height = "";
     document.body.style.minHeight = "";
     document.body.style.overflow = "";
@@ -46,6 +39,13 @@ const App = () => {
     setImagePopupOpen(false);
     setOfferPopupOpen(false);
     window.scrollTo(0, parseInt(scrollY || "0") * -1);
+  };
+  const closeNavPopup = () => {
+    document.body.style.height = "";
+    document.body.style.minHeight = "";
+    document.body.style.overflow = "";
+    setNavPopupOpen(false);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -57,25 +57,29 @@ const App = () => {
             <Layout
               modalIsOpen={navPopupOpen}
               modalOpenHandler={navPopupOpenHandler}
-              modalCloseHandler={allModalCloseHandler}
+              modalCloseHandler={bodyFixClosePopup}
+              closeNavPopup={closeNavPopup}
             />
           }
         >
           <Route
             index
-            element={<Main imagePopupOpenHandler={imagePopupOpenHandler} />}
+            element={<MainPage imagePopupOpenHandler={imagePopupOpenHandler} />}
           />
-          <Route path="affiche" element={<Affiche />} />
+          <Route path="affiche" element={<AffichePage />} />
           <Route
             path="terms"
-            element={<Terms offerPopupOpenHandler={offerPopupOpenHandler} />}
+            element={
+              <TermsPage offerPopupOpenHandler={offerPopupOpenHandler} />
+            }
           />
         </Route>
       </Routes>
-      <ImagePopup isOpen={imagePopupOpen} onClose={allModalCloseHandler} />
-      <OfferPopup isOpen={offerPopupOpen} onClose={allModalCloseHandler} />
+      <ImagePopup isOpen={imagePopupOpen} onClose={bodyFixClosePopup} />
+      <OfferPopup
+        isOpen={offerPopupOpen}
+        onClose={bodyFixClosePopup}
+      />
     </div>
   );
 };
-
-export default App;

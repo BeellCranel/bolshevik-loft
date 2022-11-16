@@ -1,7 +1,7 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.scss";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__gray-strip" />
@@ -30,5 +30,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

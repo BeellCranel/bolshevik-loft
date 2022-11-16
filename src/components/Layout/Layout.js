@@ -1,20 +1,23 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import { Header, Footer } from "../";
 
-const Layout = ({ modalIsOpen, modalOpenHandler, modalCloseHandler }) => {
+export const Layout = ({
+  modalIsOpen,
+  modalOpenHandler,
+  modalCloseHandler,
+  closeNavPopup,
+}) => {
   return (
     <>
       <Header
         modalIsOpen={modalIsOpen}
         modalOpenHandler={modalOpenHandler}
         modalCloseHandler={modalCloseHandler}
+        closeNavPopup={closeNavPopup}
       />
       <Outlet />
       <Footer />
     </>
   );
 };
-
-export default Layout;

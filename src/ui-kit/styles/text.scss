@@ -1,0 +1,7 @@
+$big-adaptive-font-size: calc(38px + 32 * ((100vw - 320px) / (1280 - 320)));
+$med-adaptive-font-size: calc(16px + 6 * ((100vw - 320px) / (1280 - 320)));
+$base-adaptive-font-size: calc(13px + 3 * ((100vw - 320px) / (1280 - 320)));
+$base-font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+$title-font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+$article-font-family: "Cormorant Garamond", Arial, Helvetica, sans-serif;
+$yeseva-font-family: "Yeseva One", Arial, Helvetica, sans-serif;

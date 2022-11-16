@@ -1,0 +1,1 @@
+export { AffichePage as default } from "./AffichePage"

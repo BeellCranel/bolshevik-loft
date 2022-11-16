@@ -1,0 +1,1 @@
+export { MainPageGallery as default } from "./MainPageGallery"

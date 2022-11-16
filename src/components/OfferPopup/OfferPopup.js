@@ -1,11 +1,17 @@
 import React from "react";
-import Form from "../../UI/Form/Form";
-import "./OfferPopup.css";
+import { OfferForm } from "../";
+import "./OfferPopup.scss";
+import clsx from "clsx";
 
-const OfferPopup = ({ isOpen, onClose }) => {
-  const popupClassName = `offer-popup${isOpen ? " offer-popup__opened" : ""}`;
+export const OfferPopup = ({
+  isOpen,
+  onClose,
+}) => {
   return (
-    <div className={popupClassName} onClick={onClose}>
+    <div
+      className={clsx("offer-popup", isOpen && "offer-popup__opened")}
+      onClick={onClose}
+    >
       <div
         className="offer-popup__container"
         onClick={(e) => e.stopPropagation()}
@@ -17,13 +23,12 @@ const OfferPopup = ({ isOpen, onClose }) => {
           onClick={onClose}
         />
         <div>
-          <h2 className="form__title">Получить коммерческое предложение</h2>
-          <Form />
+          <h2 className="offer-popup__title">
+            Получить коммерческое предложение
+          </h2>
+          <OfferForm />
         </div>
-        <Form />
       </div>
     </div>
   );
 };
-
-export default OfferPopup;

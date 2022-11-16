@@ -1,7 +1,7 @@
 import React from "react";
-import "./EventCard.css";
+import "./EventCard.scss";
 
-const EventCard = ({ hot, address }) => {
+export const EventCard = ({ hot, address }) => {
   const cardClassName = hot ? "card-hot" :  "card";
 
   return (
@@ -39,5 +39,3 @@ const EventCard = ({ hot, address }) => {
     </article>
   );
 };
-
-export default EventCard;
