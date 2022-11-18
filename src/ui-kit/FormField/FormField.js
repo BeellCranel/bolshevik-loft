@@ -1,7 +1,7 @@
 import React from "react";
 import "./FormField.scss";
 import clsx from "clsx";
-import { Input, InputPhone } from "../../ui-kit";
+import { Input, InputDate, InputPhone } from "../../ui-kit";
 
 export const FormField = ({
   className,
@@ -15,32 +15,38 @@ export const FormField = ({
   onBlur,
   onFocus,
 }) => {
+  const renderInput = () => {
+    return (
+      <Input
+        className={clsx({
+          input__active: isFocused,
+          input__error: error,
+        })}
+        {...(register ? register(name) : register)}
+        autoComplete="on"
+        error={error}
+        name={name}
+        type={type}
+        onFocus={onFocus}
+        onBlur={onBlur}
+      />
+    );
+  };
+
   return (
     <div
-      className={clsx("FormField", className, {
+      className={clsx("formField", className, {
         fieldSet__active: isFocused,
       })}
     >
-      <label className="FormField-Label" htmlFor={name}>
+      <label className="formField__label" htmlFor={name}>
         {label}
-        {isRequired && <span className="FormField-LabelRequired"> *</span>}
+        {isRequired && <span className="formField__labelRequired"> *</span>}
       </label>
       {type === "text" && (
         <>
-          <Input
-            className={clsx({
-              input__active: isFocused,
-              input__error: error,
-            })}
-            {...(register ? register(name) : register)}
-            autoComplete="on"
-            error={error}
-            name={name}
-            type={type}
-            onFocus={onFocus}
-            onBlur={onBlur}
-          />
-          {error && <div className="FormField-ErrorMessage">{error}</div>}
+          {renderInput()}
+          {error && <div className="formField__errorMessage">{error}</div>}
         </>
       )}
       {type === "tel" && (
@@ -59,7 +65,13 @@ export const FormField = ({
               onBlur={onBlur}
             />
           }
-          {error && <div className="formField-errorMessage">{error}</div>}
+          {error && <div className="formField__errorMessage">{error}</div>}
+        </>
+      )}
+      {type === "date" && (
+        <>
+          {renderInput()}
+          {error && <div className="formField__errorMessage">{error}</div>}
         </>
       )}
     </div>

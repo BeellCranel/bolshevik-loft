@@ -6,7 +6,7 @@ export const Input = forwardRef(
   ({ className, autoComplete, name, type, error, ...rest }, ref) => {
     return (
       <input
-        className={clsx("Input", className)}
+        className={clsx("input", className)}
         autoComplete={autoComplete}
         name={name}
         type={type}

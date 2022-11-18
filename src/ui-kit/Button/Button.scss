@@ -3,7 +3,7 @@
 .button {
   $this: &;
   text-transform: uppercase;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 30px;

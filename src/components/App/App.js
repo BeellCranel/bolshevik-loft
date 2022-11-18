@@ -45,6 +45,8 @@ export const App = () => {
     document.body.style.minHeight = "";
     document.body.style.overflow = "";
     setNavPopupOpen(false);
+    setImagePopupOpen(false);
+    setOfferPopupOpen(false);
     window.scrollTo(0, 0);
   };
 
@@ -64,7 +66,7 @@ export const App = () => {
         >
           <Route
             index
-            element={<MainPage imagePopupOpenHandler={imagePopupOpenHandler} />}
+            element={<MainPage imagePopupOpenHandler={imagePopupOpenHandler} closeNavPopup={closeNavPopup} />}
           />
           <Route path="affiche" element={<AffichePage />} />
           <Route

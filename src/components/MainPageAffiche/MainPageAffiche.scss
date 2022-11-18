@@ -68,6 +68,10 @@
     flex-wrap: wrap;
     gap: 2rem;
   }
+
+  &__link {
+    text-decoration: none;
+  }
 }
 
 .slick-slide > div {

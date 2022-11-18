@@ -15,7 +15,7 @@ export const InputPhone = forwardRef(
       let formattedInputValue = "";
       const selectionStart = input.selectionStart;
 
-      if (!inputNumbersValue) {
+      if (inputNumbersValue.length === 0) {
         return (input.value = "");
       }
 
@@ -80,6 +80,7 @@ export const InputPhone = forwardRef(
         type={type}
         ref={ref}
         maxLength={18}
+        minLength={16}
         onInput={handlePhoneInput}
         onKeyDown={handlePhoneKeyDown}
         onPaste={handlePhonePast}

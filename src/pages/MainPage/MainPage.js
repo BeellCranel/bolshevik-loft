@@ -6,11 +6,11 @@ import {
   MainPageHeader,
 } from "../../components";
 
-export const MainPage = ({ imagePopupOpenHandler }) => {
+export const MainPage = ({ imagePopupOpenHandler, closeNavPopup }) => {
   return (
     <main>
       <MainPageHeader />
-      <MainPageAffiche />
+      <MainPageAffiche closeNavPopup={closeNavPopup} />
       <MainPageGallery imagePopupOpenHandler={imagePopupOpenHandler} />
     </main>
   );

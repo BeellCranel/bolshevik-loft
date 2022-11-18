@@ -3,10 +3,7 @@ import { OfferForm } from "../";
 import "./OfferPopup.scss";
 import clsx from "clsx";
 
-export const OfferPopup = ({
-  isOpen,
-  onClose,
-}) => {
+export const OfferPopup = ({ isOpen, onClose }) => {
   return (
     <div
       className={clsx("offer-popup", isOpen && "offer-popup__opened")}

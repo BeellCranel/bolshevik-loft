@@ -1,0 +1,39 @@
+@import "../styles/";
+
+.input {
+  $this: &;
+  display: flex;
+  align-items: center;
+  text-align: end;
+  padding: 18px 40px 18px 12px;
+  width: 100%;
+  background-color: $color-bg-input;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: transparent;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background-color: $color-bg-input-hover;
+  }
+
+  &#{$this}__error {
+    background-color: $color-light-red;
+
+    &:hover {
+      background-color: $color-light-red-hover;
+    }
+  }
+
+  &#{$this}__active {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    color: $white-theme-font-color;
+    background-color: white;
+
+    input:hover,
+    input {
+      background-color: white;
+    }
+  }
+}

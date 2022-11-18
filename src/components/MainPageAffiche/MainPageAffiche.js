@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Button } from "../../ui-kit";
 import { EventCard } from "../";
 import Slider from "react-slick";
@@ -6,7 +7,7 @@ import "./MainPageAffiche.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export const MainPageAffiche = () => {
+export const MainPageAffiche = ({ closeNavPopup }) => {
   const settings = {
     className: "center",
     centerMode: true,
@@ -63,7 +64,13 @@ export const MainPageAffiche = () => {
           <EventCard address="https://getafisha.ru/standup/672" />
         </div>
       </section>
-      <Button type="button">еще</Button>
+      <NavLink
+        className="main-affiche__link"
+        to="/affiche"
+      >
+        <Button type="button"
+        onClick={closeNavPopup}>еще</Button>
+      </NavLink>
     </section>
   );
 };
