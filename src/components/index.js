@@ -12,6 +12,7 @@ import Messengers from "./Messengers";
 import NavPopup from "./NavPopup";
 import OfferPopup from "./OfferPopup";
 import OfferForm from "./OfferForm";
+import PresentationPopup from "./PresentationPopup";
 
 export {
   App,
@@ -28,4 +29,5 @@ export {
   NavPopup,
   OfferPopup,
   OfferForm,
+  PresentationPopup,
 };

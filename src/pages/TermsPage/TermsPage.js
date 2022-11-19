@@ -2,7 +2,10 @@ import React from "react";
 import { Button } from "../../ui-kit";
 import "./TermsPage.scss";
 
-export const TermsPage = ({ offerPopupOpenHandler }) => {
+export const TermsPage = ({
+  offerPopupOpenHandler,
+  presentationPopupOpenHandler,
+}) => {
   return (
     <main className="terms">
       <header className="terms__header">
@@ -12,7 +15,11 @@ export const TermsPage = ({ offerPopupOpenHandler }) => {
             Стоимость Услуг для проведения мероприятия зависит от дня недели и
             включает в себя:
           </p>
-          <Button type="button" className="terms__presentation-btn">
+          <Button
+            type="button"
+            className="terms__presentation-btn"
+            onClick={presentationPopupOpenHandler}
+          >
             Смотреть презентацию
           </Button>
         </div>

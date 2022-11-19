@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 import { AffichePage, MainPage, TermsPage } from "../../pages";
-import { ImagePopup, Layout, OfferPopup } from "../";
+import { ImagePopup, Layout, OfferPopup, PresentationPopup } from "../";
 
 export const App = () => {
   // состояния модальных окон
   const [navPopupOpen, setNavPopupOpen] = useState(false);
   const [imagePopupOpen, setImagePopupOpen] = useState(false);
   const [offerPopupOpen, setOfferPopupOpen] = useState(false);
+  const [presentationPopupOpen, setPresentationPopupOpen] = useState(false);
   const [scrollY, setScrollY] = useState();
-    
 
   // обработчики модальных окон
   const bodyFixHandler = () => {
@@ -31,6 +31,10 @@ export const App = () => {
     bodyFixHandler();
     setOfferPopupOpen(true);
   };
+  const presentationPopupOpenHandler = () => {
+    bodyFixHandler();
+    setPresentationPopupOpen(true);
+  };
   const bodyFixClosePopup = () => {
     document.body.style.height = "";
     document.body.style.minHeight = "";
@@ -38,6 +42,7 @@ export const App = () => {
     setNavPopupOpen(false);
     setImagePopupOpen(false);
     setOfferPopupOpen(false);
+    setPresentationPopupOpen(false);
     window.scrollTo(0, parseInt(scrollY || "0") * -1);
   };
   const closeNavPopup = () => {
@@ -47,6 +52,7 @@ export const App = () => {
     setNavPopupOpen(false);
     setImagePopupOpen(false);
     setOfferPopupOpen(false);
+    setPresentationPopupOpen(false);
     window.scrollTo(0, 0);
   };
 
@@ -66,20 +72,29 @@ export const App = () => {
         >
           <Route
             index
-            element={<MainPage imagePopupOpenHandler={imagePopupOpenHandler} closeNavPopup={closeNavPopup} />}
+            element={
+              <MainPage
+                imagePopupOpenHandler={imagePopupOpenHandler}
+                closeNavPopup={closeNavPopup}
+              />
+            }
           />
           <Route path="affiche" element={<AffichePage />} />
           <Route
             path="terms"
             element={
-              <TermsPage offerPopupOpenHandler={offerPopupOpenHandler} />
+              <TermsPage
+                offerPopupOpenHandler={offerPopupOpenHandler}
+                presentationPopupOpenHandler={presentationPopupOpenHandler}
+              />
             }
           />
         </Route>
       </Routes>
       <ImagePopup isOpen={imagePopupOpen} onClose={bodyFixClosePopup} />
-      <OfferPopup
-        isOpen={offerPopupOpen}
+      <OfferPopup isOpen={offerPopupOpen} onClose={bodyFixClosePopup} />
+      <PresentationPopup
+        isOpen={presentationPopupOpen}
         onClose={bodyFixClosePopup}
       />
     </div>
