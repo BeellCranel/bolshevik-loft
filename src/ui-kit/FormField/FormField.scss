@@ -2,6 +2,7 @@
 
 .formField {
   position: relative;
+  margin: 12px 0 30px;
   margin-bottom: 30px;
   height: 56px;
   width: 100%;
@@ -14,9 +15,6 @@
   }
 
   &__label {
-    position: absolute;
-    top: 20px;
-    left: 12px;
     z-index: 1;
     color: rgba(0, 0, 0, 0.54);
     pointer-events: none;
@@ -32,5 +30,17 @@
     padding-top: 5px;
     color: $color-red;
     transition: all 0.3s;
+  }
+}
+
+@media screen and (min-width: 525px) {
+  .formField{
+    margin: 0 0 30px;
+
+    &__label {
+      position: absolute;
+      top: 20px;
+      left: 12px;
+    }
   }
 }

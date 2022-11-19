@@ -1,5 +1,21 @@
-.offer-form{
+.offer-form {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+  &__radioGroup,
+  &__submit {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 525px) {
+  .offer-form {
     padding: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
+    
+    &__radioGroup,
+    &__submit {
+      margin-top: 0;
+    }
+  }
 }

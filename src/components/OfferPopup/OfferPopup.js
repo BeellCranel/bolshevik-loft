@@ -23,7 +23,7 @@ export const OfferPopup = ({ isOpen, onClose }) => {
           <h2 className="offer-popup__title">
             Получить коммерческое предложение
           </h2>
-          <OfferForm />
+          <OfferForm onClose={onClose} />
         </div>
       </div>
     </div>

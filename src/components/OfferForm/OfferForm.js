@@ -36,7 +36,7 @@ const schema = yup.object().shape({
 
 const radioLabels = ["Банкет", "Фуршет", "Концеренция", "Другое"];
 
-export const OfferForm = () => {
+export const OfferForm = ({ onClose }) => {
   const [isFocused, setIsFocused] = useState({
     firstName: false,
     phoneNumber: false,
@@ -55,7 +55,7 @@ export const OfferForm = () => {
   const watchAllFields = watch();
 
   const onSubmit = (data) => {
-    console.log("onSubmit");
+    onClose();
     alert("SUCCESS!! :-)\n\n" + JSON.stringify(data, null, 4));
     reset();
   };
@@ -132,6 +132,7 @@ export const OfferForm = () => {
       />
 
       <RadioGroup
+      className="offer-form__radioGroup"
         labels={radioLabels}
         name="format"
         title="Укажите формат вашего мероприятия"
@@ -156,7 +157,7 @@ export const OfferForm = () => {
         onFocus={handleFocus}
       />
 
-      <Button type="submit" name="submit">
+      <Button className="offer-form__submit" type="submit" name="submit">
         Отправить
       </Button>
     </form>
