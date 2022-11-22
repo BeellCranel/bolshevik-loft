@@ -55,7 +55,16 @@ export const NavPopup = ({ modalIsOpen, modalCloseHandler, closeNavPopup }) => {
             </NavLink>
           </li>
           <li className="modal-menu__item">
-            <p className="modal-menu__text">характеристика пространства</p>
+            <NavLink
+              className="modal-menu__nav-link"
+              to="/characteristics"
+              style={({ isActive }) => ({
+                color: isActive ? "#9f9e9c" : "white",
+              })}
+              onClick={closeNavPopup}
+            >
+              характеристика пространства
+            </NavLink>
           </li>
           <li className="modal-menu__item">
             <p className="modal-menu__text">галерея</p>

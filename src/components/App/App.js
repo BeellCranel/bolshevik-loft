@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
-import { AffichePage, MainPage, TermsPage } from "../../pages";
+import {
+  AffichePage,
+  CharacteristicsPage,
+  MainPage,
+  TermsPage,
+} from "../../pages";
 import { ImagePopup, Layout, OfferPopup, PresentationPopup } from "../";
 
 export const App = () => {
   // состояния модальных окон
   const [navPopupOpen, setNavPopupOpen] = useState(false);
+  const [isRider, setIsRider] = useState(false);
   const [imagePopupOpen, setImagePopupOpen] = useState(false);
   const [offerPopupOpen, setOfferPopupOpen] = useState(false);
   const [presentationPopupOpen, setPresentationPopupOpen] = useState(false);
@@ -33,6 +39,12 @@ export const App = () => {
   };
   const presentationPopupOpenHandler = () => {
     bodyFixHandler();
+    setIsRider(false);
+    setPresentationPopupOpen(true);
+  };
+  const riderPopupOpenHandler = () => {
+    bodyFixHandler();
+    setIsRider(true);
     setPresentationPopupOpen(true);
   };
   const bodyFixClosePopup = () => {
@@ -89,11 +101,20 @@ export const App = () => {
               />
             }
           />
+          <Route
+            path="characteristics"
+            element={
+              <CharacteristicsPage
+                presentationPopupOpenHandler={presentationPopupOpenHandler} riderPopupOpenHandler={riderPopupOpenHandler}
+              />
+            }
+          />
         </Route>
       </Routes>
       <ImagePopup isOpen={imagePopupOpen} onClose={bodyFixClosePopup} />
       <OfferPopup isOpen={offerPopupOpen} onClose={bodyFixClosePopup} />
       <PresentationPopup
+        isRider={isRider}
         isOpen={presentationPopupOpen}
         onClose={bodyFixClosePopup}
       />
