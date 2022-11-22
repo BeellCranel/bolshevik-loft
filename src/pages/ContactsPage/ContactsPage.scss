@@ -1,0 +1,79 @@
+@import "../../ui-kit/styles/";
+
+.contactsPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  margin-top: $header-height;
+
+  &__title {
+    font-size: $med-adaptive-font-size;
+    width: 500px;
+    max-width: 95%;
+    color: $white-theme-font-color;
+    text-align: center;
+    margin: 0 auto 1rem;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: $white-theme-font-color;
+  }
+
+  &__link {
+    color: #ff8562;
+    text-decoration: none;
+  }
+
+  &__contacts {
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 0;
+  }
+
+  &__contacts-wrapper {
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  &__location {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  &__yandex-map {
+    width: 600px;
+    max-width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 525px) {
+    .contactsPage__location {
+        padding: 0 3rem;
+      }
+}
+
+@media screen and (min-width: 650px) {
+  .contactsPage__location {
+    flex-direction: row;
+  }
+}

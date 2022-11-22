@@ -4,6 +4,7 @@ import "./App.scss";
 import {
   AffichePage,
   CharacteristicsPage,
+  ContactsPage,
   MainPage,
   TermsPage,
 } from "../../pages";
@@ -107,6 +108,12 @@ export const App = () => {
               <CharacteristicsPage
                 presentationPopupOpenHandler={presentationPopupOpenHandler} riderPopupOpenHandler={riderPopupOpenHandler}
               />
+            }
+          />
+          <Route
+            path="contacts"
+            element={
+              <ContactsPage />
             }
           />
         </Route>
