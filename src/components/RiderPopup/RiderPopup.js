@@ -1,14 +1,11 @@
 import React from "react";
-import "./PresentationPopup.scss";
+import "./RiderPopup.scss";
 import clsx from "clsx";
 
-export const PresentationPopup = ({ isOpen, onClose }) => {
+export const RiderPopup = ({ isOpen, onClose }) => {
   return (
     <div
-      className={clsx(
-        "PresentationPopup",
-        isOpen && "PresentationPopup__opened"
-      )}
+      className={clsx("RiderPopup", isOpen && "RiderPopup__opened")}
       onClick={onClose}
     >
       <div
@@ -18,7 +15,7 @@ export const PresentationPopup = ({ isOpen, onClose }) => {
         <div className="PresentationPopup__close-btn" onClick={onClose} />
         <iframe
           title="PresentationPopup"
-          src="https://drive.google.com/file/d/1ZQCT05i5F6chyMit9RLAJsO6v_P7s1jw/preview"
+          src="https://drive.google.com/file/d/1SnVIGQUzM-sqMHpu0ILfGBGW_FLoQ51c/preview"
           width="100%"
           height="100%"
           allow="autoplay"

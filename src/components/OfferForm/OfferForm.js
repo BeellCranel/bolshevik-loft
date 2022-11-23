@@ -135,7 +135,7 @@ export const OfferForm = ({ onClose }) => {
       className="offer-form__radioGroup"
         labels={radioLabels}
         name="format"
-        title="Укажите формат вашего мероприятия"
+        title="Формат мероприятия"
         type="radio"
         register={register}
         error={errors.format && errors.format.message}

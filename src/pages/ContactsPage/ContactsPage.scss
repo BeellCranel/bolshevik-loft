@@ -5,16 +5,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
   margin-top: $header-height;
 
   &__title {
-    font-size: $med-adaptive-font-size;
-    width: 500px;
-    max-width: 95%;
+    font-size: calc($med-adaptive-font-size * 1.3);
+    max-width: 90%;
     color: $white-theme-font-color;
     text-align: center;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.5rem;
     text-transform: uppercase;
   }
 
@@ -22,58 +20,56 @@
     color: $white-theme-font-color;
   }
 
-  &__link {
-    color: #ff8562;
-    text-decoration: none;
+  &__whatsapp {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url("../../vendor/images/messengers/whatsapp-white-theme.svg");
+    background-size: cover;
+    margin-left: 1rem;
   }
 
-  &__contacts {
-    width: 100%;
-    padding: 1.5rem 0;
-  }
-
-  &__wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0 0;
+  &__telegram {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url("../../vendor/images/messengers/telegram-white-theme.svg");
+    background-size: cover;
+    margin-left: 1rem;
   }
 
   &__contacts-wrapper {
-    max-width: 800px;
-    text-align: center;
+    width: 800px;
+    max-width: 100%;
+    padding: 3.5rem 1rem;
+  }
+
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin: 0 auto;
-    margin-bottom: 2rem;
   }
 
-  &__location {
-    width: 100%;
+  &__list-item {
     display: flex;
-    justify-content: center;
-    padding: 0 1rem;
-    gap: 1rem;
-    flex-direction: column;
+    align-items: center;
   }
 
   &__yandex-map {
-    width: 600px;
-    max-width: 100%;
+    width: 100%;
     height: 300px;
+  }
+
+  &__form-wrapper {
+    width: 800px;
+    max-width: 100%;
   }
 }
 
 @media screen and (min-width: 525px) {
-    .contactsPage__location {
-        padding: 0 3rem;
-      }
-}
-
-@media screen and (min-width: 650px) {
-  .contactsPage__location {
-    flex-direction: row;
+  .contactsPage {
+    &__contacts-wrapper {
+      padding: 3.5rem 3rem;
+    }
   }
 }

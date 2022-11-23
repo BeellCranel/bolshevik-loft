@@ -7,7 +7,8 @@
   background-color: $color-bg-input;
   border: 1px solid transparent;
   padding: 12px 12px 0;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+  position: relative;
 
   &__active {
     background-color: white;
@@ -19,6 +20,9 @@
   }
 
   &__label {
+    position: absolute;
+    top: -18px;
+    left: 0;
     font-weight: 400;
     z-index: 1;
     color: rgba(0, 0, 0, 0.54);
@@ -31,5 +35,15 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+@media screen and (min-width: 525px) {
+  .radioSet {
+    margin-bottom: 30px;
+
+    &__label{
+      position: static;
+    }
   }
 }

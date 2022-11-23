@@ -8,12 +8,12 @@ import {
   MainPage,
   TermsPage,
 } from "../../pages";
-import { ImagePopup, Layout, OfferPopup, PresentationPopup } from "../";
+import { ImagePopup, Layout, OfferPopup, PresentationPopup, RiderPopup } from "../";
 
 export const App = () => {
   // состояния модальных окон
   const [navPopupOpen, setNavPopupOpen] = useState(false);
-  const [isRider, setIsRider] = useState(false);
+  const [riderPopupOpen, setRiderPopupOpen] = useState(false);
   const [imagePopupOpen, setImagePopupOpen] = useState(false);
   const [offerPopupOpen, setOfferPopupOpen] = useState(false);
   const [presentationPopupOpen, setPresentationPopupOpen] = useState(false);
@@ -40,13 +40,11 @@ export const App = () => {
   };
   const presentationPopupOpenHandler = () => {
     bodyFixHandler();
-    setIsRider(false);
     setPresentationPopupOpen(true);
   };
   const riderPopupOpenHandler = () => {
     bodyFixHandler();
-    setIsRider(true);
-    setPresentationPopupOpen(true);
+    setRiderPopupOpen(true);
   };
   const bodyFixClosePopup = () => {
     document.body.style.height = "";
@@ -56,6 +54,7 @@ export const App = () => {
     setImagePopupOpen(false);
     setOfferPopupOpen(false);
     setPresentationPopupOpen(false);
+    setRiderPopupOpen(false);
     window.scrollTo(0, parseInt(scrollY || "0") * -1);
   };
   const closeNavPopup = () => {
@@ -66,6 +65,7 @@ export const App = () => {
     setImagePopupOpen(false);
     setOfferPopupOpen(false);
     setPresentationPopupOpen(false);
+    setRiderPopupOpen(false);
     window.scrollTo(0, 0);
   };
 
@@ -106,25 +106,21 @@ export const App = () => {
             path="characteristics"
             element={
               <CharacteristicsPage
-                presentationPopupOpenHandler={presentationPopupOpenHandler} riderPopupOpenHandler={riderPopupOpenHandler}
+                presentationPopupOpenHandler={presentationPopupOpenHandler}
+                riderPopupOpenHandler={riderPopupOpenHandler}
               />
             }
           />
-          <Route
-            path="contacts"
-            element={
-              <ContactsPage />
-            }
-          />
+          <Route path="contacts" element={<ContactsPage />} />
         </Route>
       </Routes>
       <ImagePopup isOpen={imagePopupOpen} onClose={bodyFixClosePopup} />
       <OfferPopup isOpen={offerPopupOpen} onClose={bodyFixClosePopup} />
       <PresentationPopup
-        isRider={isRider}
         isOpen={presentationPopupOpen}
         onClose={bodyFixClosePopup}
       />
+      <RiderPopup isOpen={riderPopupOpen} onClose={bodyFixClosePopup} />
     </div>
   );
 };

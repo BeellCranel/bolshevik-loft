@@ -3,7 +3,10 @@
   display: flex;
   flex-direction: column;
 
-  &__radioGroup,
+  &__radioGroup {
+    margin-top: 24px;
+  }
+
   &__submit {
     margin-top: 12px;
   }

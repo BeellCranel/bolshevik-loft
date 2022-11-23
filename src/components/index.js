@@ -13,6 +13,7 @@ import NavPopup from "./NavPopup";
 import OfferPopup from "./OfferPopup";
 import OfferForm from "./OfferForm";
 import PresentationPopup from "./PresentationPopup";
+import RiderPopup from "./RiderPopup";
 
 export {
   App,
@@ -30,4 +31,5 @@ export {
   OfferPopup,
   OfferForm,
   PresentationPopup,
+  RiderPopup,
 };
