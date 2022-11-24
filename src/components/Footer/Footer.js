@@ -1,4 +1,5 @@
 import React from "react";
+import {Contacts} from "../";
 import "./Footer.scss";
 
 export const Footer = () => {
@@ -13,16 +14,7 @@ export const Footer = () => {
       <p className="footer__address">
         <strong>г. Москва, Ленинградский проспект дом 15, стр.1</strong>
       </p>
-      <a
-        className="footer__email-info"
-        href="mailto:info@bolshevikloft.ru"
-        rel="noreferrer noopener"
-        target="_blank"
-      >
-        <strong>
-          <u>info@bolshevikloft.ru</u>
-        </strong>
-      </a>
+      <Contacts />
       <p className="footer__ooo">
         ООО "БОЛЬШЕВИК ХОЛЛ" ИНН: 9705151781 ОГРН: 1217700018250 ТЕЛЕФОН:
         +79773353435

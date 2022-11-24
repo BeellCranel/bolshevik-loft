@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "../../ui-kit";
 import "./TermsPage.scss";
 
 export const TermsPage = ({
   offerPopupOpenHandler,
   presentationPopupOpenHandler,
+  bodyFixClosePopup,
 }) => {
   return (
     <main className="terms">
@@ -94,8 +96,18 @@ export const TermsPage = ({
         <p>
           Мы всегда рады пойти навстречу нашим заказчикам и готовы обсудить
           специальные условия и цены для проведения вашего мероприятия. Для
-          получения индивидуальных условий заполните <u>форму</u>, позвоните или
-          напишите нашему менеджеру в <u>отдел продаж</u>.
+          получения индивидуальных условий заполните форму ниже, либо позвоните
+          или напишите нашему менеджеру в{" "}
+          {
+            <Link
+              className="terms__link"
+              to="/contacts"
+              onClick={() => window.scrollTo(0, parseInt("0"))}
+            >
+              отдел продаж
+            </Link>
+          }
+          .
         </p>
         <button
           type="button"

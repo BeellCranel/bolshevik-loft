@@ -13,7 +13,7 @@ export const Contacts = () => {
           </a>
         </li>
         <li className="contacts__item">
-          <a href="mailto:info@bolshevikloft.ru" className="contacts__link contacts__link_type_email">
+          <a href="mailto:info@bolshevikloft.ru" className="contacts__link">
             <strong>info@bolshevikloft.ru</strong>
           </a>
         </li>

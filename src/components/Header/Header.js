@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import { Logo, Burger } from "../../ui-kit";
-import { Contacts, NavPopup } from "../";
+import { NavPopup } from "../";
 
 export const Header = ({
   modalIsOpen,
@@ -12,7 +12,6 @@ export const Header = ({
   return (
     <header className="header">
       <Logo />
-      <Contacts />
       <div>
         <Burger
           modalIsOpen={modalIsOpen}

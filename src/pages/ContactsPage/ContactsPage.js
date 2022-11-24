@@ -15,7 +15,10 @@ export const ContactsPage = () => {
           </li>
           <li className="contactsPage__list-item">
             <p className="contactsPage__text">
-              Администратор: <strong>+7 977-335-34-35</strong>
+              Администратор:{" "}
+              <a className="contactsPage__link" href="tel: +79773353435">
+                <strong>+7 977-335-34-35</strong>
+              </a>
             </p>
             <a
               href="https://api.whatsapp.com/send/?phone=79773353435&text&app_absent=0"
@@ -35,16 +38,14 @@ export const ContactsPage = () => {
           <li className="contactsPage__list-item">
             <p className="contactsPage__text">
               Почта:{" "}
-              <strong>
-                <a
-                  href="mailto:info@bolshevikloft.ru"
-                  className="contactsPage__link"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  info@bolshevikloft.ru
-                </a>
-              </strong>
+              <a
+                href="mailto:info@bolshevikloft.ru"
+                className="contactsPage__link"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <strong>info@bolshevikloft.ru</strong>
+              </a>
             </p>
           </li>
           <li className="contactsPage__list-item">

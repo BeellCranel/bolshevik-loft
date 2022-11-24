@@ -19,6 +19,11 @@
   &__text {
     color: $white-theme-font-color;
   }
+  
+  &__link {
+    color: $color-link-orange;
+    text-decoration: none;
+  }
 
   &__whatsapp {
     width: 20px;

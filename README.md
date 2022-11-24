@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Проект в разработке
+
+[Проект на GithubPages](https://beellcranel.github.io/bolshevik-loft/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

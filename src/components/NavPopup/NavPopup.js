@@ -79,7 +79,16 @@ export const NavPopup = ({ modalIsOpen, modalCloseHandler, closeNavPopup }) => {
             </NavLink>
           </li>
           <li className="modal-menu__item">
-            <p className="modal-menu__text">парковка</p>
+            <NavLink
+              className="modal-menu__nav-link"
+              to="/parking"
+              style={({ isActive }) => ({
+                color: isActive ? "#9f9e9c" : "white",
+              })}
+              onClick={closeNavPopup}
+            >
+              парковка
+            </NavLink>
           </li>
         </ul>
       </nav>

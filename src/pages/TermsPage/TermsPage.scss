@@ -102,6 +102,11 @@
     gap: 0.5rem;
   }
 
+  &__link {
+    text-decoration: none;
+    color: $color-link-orange;
+  }
+
   &__offer {
     font-family: $base-font-family;
     text-transform: lowercase;

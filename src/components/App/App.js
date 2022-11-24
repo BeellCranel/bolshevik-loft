@@ -6,9 +6,16 @@ import {
   CharacteristicsPage,
   ContactsPage,
   MainPage,
+  ParkingPage,
   TermsPage,
 } from "../../pages";
-import { ImagePopup, Layout, OfferPopup, PresentationPopup, RiderPopup } from "../";
+import {
+  ImagePopup,
+  Layout,
+  OfferPopup,
+  PresentationPopup,
+  RiderPopup,
+} from "../";
 
 export const App = () => {
   // состояния модальных окон
@@ -99,6 +106,7 @@ export const App = () => {
               <TermsPage
                 offerPopupOpenHandler={offerPopupOpenHandler}
                 presentationPopupOpenHandler={presentationPopupOpenHandler}
+                bodyFixClosePopup={bodyFixClosePopup}
               />
             }
           />
@@ -112,6 +120,7 @@ export const App = () => {
             }
           />
           <Route path="contacts" element={<ContactsPage />} />
+          <Route path="parking" element={<ParkingPage />} />
         </Route>
       </Routes>
       <ImagePopup isOpen={imagePopupOpen} onClose={bodyFixClosePopup} />
